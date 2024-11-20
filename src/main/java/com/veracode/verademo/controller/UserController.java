@@ -346,7 +346,7 @@ public class UserController {
 		HttpServletResponse response) {
 	logger.info("Entering processLogin");
 
-	// Determine eventual redirect. Do this here in case we're already logged in
+	// Determine eventual redirect. Do this here in case we're already logged in.
 	String nextView;
 	if (target != null && !target.isEmpty() && !target.equals("null")) {
 		nextView = "redirect:" + target;
